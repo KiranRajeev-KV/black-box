@@ -1,0 +1,17 @@
+[project]
+name = "rag-basics"
+version = "0.1.0"
+description = "RAG basics: document loading, chunking, embedding, retrieval, and generation"
+readme = "README.md"
+authors = [
+    { name = "KiranRajeev-KV", email = "kiranrajeevkv@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+rag-basics = "rag_basics.loader:main"
+
+[build-system]
+requires = ["uv_build>=0.11.2,<0.12.0"]
+build-backend = "uv_build"
