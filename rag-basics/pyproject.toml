@@ -7,10 +7,12 @@ authors = [
     { name = "KiranRajeev-KV", email = "kiranrajeevkv@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "tiktoken",
+]
 
 [project.scripts]
-rag-basics = "rag_basics.loader:main"
+rag-basics = "rag_basics.chunker:main"
 
 [build-system]
 requires = ["uv_build>=0.11.2,<0.12.0"]
